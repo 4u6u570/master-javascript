@@ -6,6 +6,14 @@
 var categorias = ['Acción', 'Terror', 'Comedia'];
 var peliculas = ['La verdad duele', 'La vida es bella', 'Gran Torino'];
 
+// Método para ordenar los elementos de un array por oden alfabético.
+
+peliculas.sort();
+
+// Método para invertir el orden de los elementos en un array.
+
+peliculas.reverse()
+
 var cine = [categorias, peliculas];
 
 // document.write(cine[0][1]);
@@ -36,3 +44,4 @@ var cadena_array = cadena.split(", ");
 console.log(cadena_array);
 //document.write(peliculas_string)
 //document.write(peliculas);
+

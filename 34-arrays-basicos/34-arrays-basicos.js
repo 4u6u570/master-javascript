@@ -24,11 +24,29 @@ for(var i = 0; i < lenguajes.length; i++){
     document.write("<li>"+lenguajes[i]+"</li>");
 }
     document.write("</ul>");
-*/
+
 
 lenguajes.forEach((elementosDelArrayLenguajes, indice)=> {
     document.write("<li>"+indice+" - "+elementosDelArrayLenguajes+"</li>");
 });
+*/
 
+// El for in es una forma más elegante que el for común para iterar.  
+for(let lenguaje in lenguajes){
+    document.write("<li>"+lenguajes[lenguaje]+"</li>");
+}
 document.write("</ul>");
 
+
+// Búsquedas
+
+var precios = [10, 20, 50, 80, 12];
+
+var busqueda = lenguajes.find(lenguaje => lenguaje == "PHP");
+
+// Busca el Index del elemento, es decir, la posición en el array.
+var busqueda = lenguajes.findIndex(lenguaje => lenguaje == "JS");
+
+// Some busca en el array si existe el elemento dado y arroja un booleano.
+var busqueda = precios.some(precio => precio >= 20);
+document.write(busqueda);
